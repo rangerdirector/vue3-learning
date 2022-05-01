@@ -13,4 +13,18 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
 2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+
+install husky
+npm install husky —save-devEnable Git hooks
+npm set-script prepare “husky install”
+npm run prepare
+这个时候生成了.husky文件夹
+添加hook
+husky add commit-msg
+npx husky add .husky/commit-msg ‘npx —no-install commitlint —edit “$1”’
+npm install —save-dev @commitlint/cli @commitlint/config-conventional
+然后在根目录新建一个commitlint.config.js
+module.exports = {extends:[“@commitlint/config-conventional”]}
+如果想在提交前加一些测试用例，eslint较验等
+npx husky add .husky/pre-commit “npm run test:unit”
+
