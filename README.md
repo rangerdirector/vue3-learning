@@ -28,3 +28,4 @@ module.exports = {extends:[“@commitlint/config-conventional”]}
 如果想在提交前加一些测试用例，eslint较验等
 npx husky add .husky/pre-commit “npm run test:unit”
 
+集成normalize.css

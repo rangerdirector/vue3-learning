@@ -11,7 +11,13 @@
   "dependencies": {
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
-    "vue": "^3.2.25"
+    "dayjs": "^1.11.1",
+    "element-plus": "^2.1.11",
+    "element-theme-chalk": "^2.15.8",
+    "normalize.css": "^8.0.1",
+    "vue": "^3.2.25",
+    "vuex": "^4.0.2",
+    "vuex-module-decorators": "^2.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
