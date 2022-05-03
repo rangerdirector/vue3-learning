@@ -29,3 +29,7 @@ module.exports = {extends:[“@commitlint/config-conventional”]}
 npx husky add .husky/pre-commit “npm run test:unit”
 
 集成normalize.css
+
+修复@路径webstorm不识别
+
+
