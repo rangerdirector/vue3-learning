@@ -1,10 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-// import {loadAllPlugins} from './plugins';
+import store from '@/store';
+import {loadAllPlugins} from './plugins';
 
 import 'normalize.css'
 
 const app = createApp(App);
-// loadAllPlugins(app);
+loadAllPlugins(app);
 
-app.mount('#app')
+app.
+  use(store).
+  mount('#app')
