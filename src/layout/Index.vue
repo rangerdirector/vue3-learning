@@ -1,8 +1,10 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import AppMain from '@/layout/components/AppMain.vue'
+</script>
 
 <template>
   <div>
-    <router-view></router-view>
+    <AppMain />
   </div>
 </template>
 

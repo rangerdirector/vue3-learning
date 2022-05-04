@@ -6,7 +6,7 @@ const router = createRouter({
   routes:[
     {
       path:'/',
-      component:Layout,
+      component: Layout,
       redirect: '/dashboard',
       children:[
         {
