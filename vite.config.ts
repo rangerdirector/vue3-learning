@@ -12,6 +12,6 @@ export default defineConfig({
     WindiCss(),
   ],
   alias:{
-    '@': path.resolve(__dirname,'./src')
+    '@': path.resolve(__dirname,'src')
   }
 })
